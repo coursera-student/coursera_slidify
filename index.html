@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Coursera Slidify project</title>
+  <title>Coursera Slidify Project</title>
   <meta charset="utf-8">
-  <meta name="description" content="Coursera Slidify project">
+  <meta name="description" content="Coursera Slidify Project">
   <meta name="author" content="Coursera-student">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -32,7 +32,7 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1>Coursera Slidify project</h1>
+    <h1>Coursera Slidify Project</h1>
     <h2>Reproducible Pitch Presentation</h2>
     <p>Coursera-student<br/></p>
   </hgroup>
@@ -43,51 +43,99 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Create</h2>
+    <h2>The Project</h2>
   </hgroup>
   <article data-timings="">
-    <p>The easiest way to get started is by using the <code>author</code> function to set up a scaffold for your slide deck. This will do the following</p>
+    <p>This Slidify presentation is one of the assignments that fufills the requirements for the &quot;Developping Data Products&quot; class offered on <a href="https://www.coursera.org/course/devdataprod">Coursera</a>.</p>
 
-<ul class = "build incremental">
-<li>create a directory for the deck.</li>
-<li>copy necessary scaffolding for the deck.</li>
-<li>if you have git installed, then
+<p><img class ='center'src='./image/DevelopingDataProducts.jpg' height=200px/></p>
 
-<ul>
-<li>initialize a git repo</li>
-<li>switch to a gh-pages branch</li>
-<li>commit all changes to the repo.</li>
-</ul></li>
-<li>open index.Rmd for you to edit.</li>
-</ul>
+<p>The goal of this Slidify presentation is to give a brief overview of a my Shiny Web Application. The app uses the &quot;ozone&quot; dataset from the Element of Statistical Learning package and displays a scatterplot of the relationship between the X and Y variables that the user specifies from a drop down menu. A loess curve is added to the scatterplot. </p>
+
+<p>The code for this Slidify presentation is available on <a href="">Github</a></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="centrepre bigger" id="slide-2">
-<hgroup>
-  
-</hgroup>
-<article class = 'flexbox vcenter'>
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>The Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">library(ElemStatLearn) # install.packages(&quot;ElemStatLearn&quot;)
+data(ozone)
+summary(ozone)
+</code></pre>
 
-</article>
-<!-- Presenter Notes -->
+<pre><code>##      ozone         radiation    temperature        wind      
+##  Min.   :  1.0   Min.   :  7   Min.   :57.0   Min.   : 2.30  
+##  1st Qu.: 18.0   1st Qu.:114   1st Qu.:71.0   1st Qu.: 7.40  
+##  Median : 31.0   Median :207   Median :79.0   Median : 9.70  
+##  Mean   : 42.1   Mean   :185   Mean   :77.8   Mean   : 9.94  
+##  3rd Qu.: 62.0   3rd Qu.:256   3rd Qu.:84.5   3rd Qu.:11.50  
+##  Max.   :168.0   Max.   :334   Max.   :97.0   Max.   :20.70
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
 </slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Access to the Shiny Application</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The Shiny application can be access in three ways:</p>
+
+<ol>
+<li>Via the <a href="">shinyapps.io</a> website.</li>
+<li>By going to the next slide.</li>
+<li>By accessing the raw source from <a href="">Github</a>: download the <code>server.R</code> and <code>ui.R</code> files. Open R and set the working directory to be inside the folder that contains both files. Then run the following commands:</li>
+</ol>
+
+<pre><code>library(shiny)
+runApp()
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <article data-timings="">
+    <iframe src=http://coursera-student.shinyapps.io/coursera-shiny></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
     <slide class="backdrop"></slide>
   </slides>
   <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Create'>
+        data-slide=1 title='The Project'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title=''>
+        data-slide=2 title='The Data'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Access to the Shiny Application'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title=''>
+         4
       </a>
     </li>
   </ul>
