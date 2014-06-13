@@ -20,7 +20,7 @@ This Slidify presentation is one of the assignments that fufills the requirement
 The goal of this Slidify presentation is to give a brief overview of a my Shiny Web Application. The app uses the "ozone" dataset from the Element of Statistical Learning package and displays a scatterplot of the relationship between the X and Y variables that the user specifies from a drop down menu. A loess curve is added to the scatterplot. 
 
 
-The code for this Slidify presentation is available on [Github]()
+The code for this Slidify presentation is available on [Github](https://github.com/coursera-student/coursera_slidify)
 
 
 ---
@@ -50,9 +50,9 @@ summary(ozone)
 
 The Shiny application can be access in three ways:
 
-1. Via the [shinyapps.io]() website.
+1. Via the [shinyapps.io](https://coursera-student.shinyapps.io/coursera-shiny/) website.
 2. By going to the next slide.
-3. By accessing the raw source from [Github](): download the `server.R` and `ui.R` files. Open R and set the working directory to be inside the folder that contains both files. Then run the following commands:
+3. By accessing the raw source from [Github](https://github.com/coursera-student/coursera-shiny): download the `server.R` and `ui.R` files. Open R and set the working directory to be inside the folder that contains both files. Then run the following commands:
 
 ```
 library(shiny)
